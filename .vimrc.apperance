@@ -1,0 +1,12 @@
+".vimrc.apperance
+
+set showmatch
+set number
+" Show invisible charactor
+set list
+" Invisible character format
+set listchars=tab:>.,trail:_,extends:>,precedes:<
+" Show non-printable character as hex
+set display=uhex
+
+

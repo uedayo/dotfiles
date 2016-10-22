@@ -1,0 +1,27 @@
+# .bashrc.alias
+
+# ls
+alias la="ls -a"
+alias ltr="ls -ltr"
+
+# du/df
+alias du="du -h"
+alias df="df -h"
+alias duh="du -h ./ --max-depth=1"
+
+# vim
+alias vi=vim
+
+# screen
+alias s='screen -U'
+alias sc='screen -S main'
+alias sn='screen'
+alias sl='screen -ls'
+alias sr='screen -r main'
+alias srr='screen -U -D -RR'
+
+# ssh
+function sshp() {
+  command sshpass -f $1 ssh -o StrictHostKeyChecking=no $2
+}
+
